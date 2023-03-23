@@ -41,3 +41,10 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
+SELECT STRFTIME("%Y", c23), avg(c21)
+FROM tbl2
+GROUP BY c23
+
+-- SELECT SUBSTR(c23, 1, 4) AS YEAR, avg(c21)
+-- FROM tbl2
+-- GROUP BY c23
